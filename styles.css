@@ -30,3 +30,15 @@ body {
   .knopka {
     transition: 0.1s;
   }
+
+  #click-btn {
+    transition: 0.1s;
+  }
+
+  #click-btn:hover {
+    transform: scale(0.95);
+  }
+  
+  #click-btn:active {
+    transform: scale(1.05);
+  }
