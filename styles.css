@@ -1,44 +1,48 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #f8f9fa;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .clicker-btn {
-    font-size: 2rem;
-    padding: 20px 40px;
-  }
-  .upgrade-panel {
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
-    height: 100%;
-  }
-  .upgrade-panel h4 {
-    margin-bottom: 20px;
-  }
-  .knopka:hover {
-    padding: 6px 15px;
-  }
-  .knopka {
-    transition: 0.1s;
-  }
+  background-color: #f8f9fa;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clicker-btn {
+  font-size: 2rem;
+  padding: 20px 40px;
+}
+.upgrade-panel {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  height: 100%;
+}
+.upgrade-panel h4 {
+  margin-bottom: 20px;
+}
+.knopka:hover {
+  /* padding: 6px 15px; */
+}
+.knopka {
+  transition: 0.1s;
+}
 
-  #click-btn {
-    transition: 0.1s;
-  }
+#click-btn {
+  transition: 0.1s;
+}
 
-  #click-btn:hover {
-    transform: scale(0.95);
-  }
-  
-  #click-btn:active {
-    transform: scale(1.05);
-  }
+#click-btn:hover {
+  transform: scale(0.95);
+}
+
+#click-btn:active {
+  transform: scale(1.05);
+}
+
+.prirost {
+  color: gray;
+}
