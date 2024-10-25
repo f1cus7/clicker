@@ -1,6 +1,7 @@
 const clickBtn = document.getElementById('click-btn');
 const scoreNode = document.getElementById('score');
 
+// Массивы для апгрейдов
 const upgrades = {
   click: [
     { btn: 'update-1', cost: 10, bonus: 0.34, increment: 1, scale: 'prirost1' },
@@ -20,6 +21,7 @@ const upgrades = {
 
 let scoreForClick = 1;
 let score = 0;
+let autoIncome = 0;
 
 // Обновление счета
 const updateScoreDisplay = () => {
@@ -43,7 +45,7 @@ const handleClickUpgrade = (btn, cost, increment, bonus, scale) => {
       updateScoreDisplay();
       cost *= 2;
       button.innerText = '$' + cost;
-      scaleNode.innerText = 'Текущий прирост: ' + scoreForClick.toFixed(2) + '$'
+      scaleNode.innerText = 'Текущий прирост: ' + scoreForClick.toFixed(2) + '$';
     }
   });
 };
@@ -59,16 +61,18 @@ const handleAutoUpgrade = (btn, cost, increment, bonus, scale) => {
       cost *= 2;
       button.innerText = '$' + cost;
 
-
-      setInterval(() => {
-        score += increment + bonus;
-        updateScoreDisplay();
-      }, 1000);
-      let inbo = increment + bonus
-      scaleNode.innerText = 'Текущий прирост: ' + inbo.toFixed(2) + '$'
+      autoIncome += increment + bonus;
+      scaleNode.innerText = 'Текущий прирост: ' + autoIncome.toFixed(2) + '$/сек';
     }
   });
 };
+
+setInterval(() => {
+  if (autoIncome > 0) {
+    score += autoIncome;
+    updateScoreDisplay();
+  }
+}, 1000);
 
 upgrades.click.forEach(({ btn, cost, increment, bonus, scale }) => handleClickUpgrade(btn, cost, increment, bonus, scale));
 upgrades.auto.forEach(({ btn, cost, increment, bonus, scale }) => handleAutoUpgrade(btn, cost, increment, bonus, scale));
