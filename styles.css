@@ -59,3 +59,7 @@ body {
   background-color: rgb(133, 182, 255);
   border-radius: 10px;
 }
+
+.invise-skyscaper {
+  display: none;
+}
