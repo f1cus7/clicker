@@ -7,6 +7,7 @@ body {
   background-color: #f8f9fa;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .update-panel {
@@ -30,6 +31,8 @@ body {
 
 .knopka {
   transition: 0.1s;
+  margin: 10px auto;
+  padding: 20px;
 }
 
 #click-btn {
@@ -61,5 +64,34 @@ body {
 }
 
 .invise-skyscaper {
+  display: none;
+}
+
+.update-place {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20vh;
+}
+.update-text-for-click {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  bottom: 20vh;
+  width: 100%;
+  height: 5vh;
+  border-top: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.update-btn {
+  background-color: #fff;
+  border: none;
+  margin: auto 2%;
+}
+
+.hidden {
   display: none;
 }

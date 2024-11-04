@@ -12,31 +12,12 @@
 <body>
   <div class="container">
     <div class="row justify-content-center update-panel">
+
       <div class="col-md-3 upgrade-panel">
         <h4>Улучшение клика</h4>
         <p class="prirost">Купить дом</p>
         <p class="prirost" id="prirost1">Текущий прирост: 0$</p>
         <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-            первый дом
-            <button id="update-1" class="knopka btn btn-primary">$10</button>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-            второй дом
-            <button id="update-2" class="knopka btn btn-primary">$100</button>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-            третий дом
-            <button id="update-3" class="knopka btn btn-primary">$500</button>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-            четвертый дом
-            <button id="update-4" class="knopka btn btn-primary">$1000</button>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-            пятый дом
-            <button id="update-5" class="knopka btn btn-primary">$5000</button>
-          </li>
         </ul>
       </div>
 
@@ -50,40 +31,81 @@
         <p class="prirost">Улучшить дом</p>
         <p class="prirost" id="auto-prirost1">Текущий прирост: 0$</p>
         <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-            первый дом
-            <button id="auto-update-1" class="knopka btn btn-primary">$100</button>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-            второй дом
-            <button id="auto-update-2" class="knopka btn btn-primary">$1000</button>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-            третий дом
-            <button id="auto-update-3" class="knopka btn btn-primary">$5000</button>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-            четвертый дом
-            <button id="auto-update-4" class="knopka btn btn-primary">$10000</button>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-            пятый дом
-            <button id="auto-update-5" class="knopka btn btn-primary">$50000</button>
-          </li>
+          
         </ul>
       </div>
     </div>
 
 
-    <div class="row skyscapers-row justify-content-center">
+    <!-- <div class="row skyscapers-row justify-content-center">
       <div class="col-md-1 skyscapers invise-skyscaper" id="skyscaper-1"><br><br><br><br><br><br><br></div>
       <div class="col-md-1 skyscapers invise-skyscaper" id="skyscaper-2"><br><br><br><br><br><br><br></div>
       <div class="col-md-1 skyscapers invise-skyscaper" id="skyscaper-3"><br><br><br><br><br><br><br></div>
       <div class="col-md-1 skyscapers invise-skyscaper" id="skyscaper-4"><br><br><br><br><br><br><br></div>
       <div class="col-md-1 skyscapers invise-skyscaper" id="skyscaper-5"><br><br><br><br><br><br><br></div>
     </div>
+  </div> -->
+
+
+  <div class="update-text-for-click">
+    <button class="update-btn">Улучшение клика</button>
+    <button class="update-btn">Заработок в секунду</button>
   </div>
 
+
+<!-- Улучшение за клик -->
+<div class="update-place hidden">
+  <div class="row">
+    <div class="col"><div class=" d-flex justify-content-between align-items-center flex-wrap">
+      <h4 style="width: 100%; text-align: center;">Купить первый дом</h4><br>
+      <button id="update-1" class="knopka btn btn-primary">$10</button>
+    </div></div>
+    <div class="col"><div class="d-flex justify-content-between align-items-center flex-wrap">
+      <h4 style="width: 100%; text-align: center;">Купить второй дом</h4>
+      <button id="update-2" class="knopka btn btn-primary">$100</button>
+    </div></div>
+    <div class="col"><div class="d-flex justify-content-between align-items-center flex-wrap">
+      <h4 style="width: 100%; text-align: center;">Купить третий дом</h4>
+      <button id="update-3" class="knopka btn btn-primary">$500</button>
+    </div></div>
+    <div class="col"><div class="d-flex justify-content-between align-items-center flex-wrap">
+      <h4 style="width: 100%; text-align: center;">Купить четвертый дом</h4>
+      <button id="update-4" class="knopka btn btn-primary">$1000</button>
+    </div></div>
+    <div class="col"><div class="d-flex justify-content-between align-items-center flex-wrap">
+      <h4 style="width: 100%; text-align: center;">Купить пятый дом</h4>
+      <button id="update-5" class="knopka btn btn-primary">$5000</button>
+    </div></div>
+  </div>
+</div>
+
+<!-- Улучшение за клик в секунду -->
+
+<div class="update-place">
+  <div class="row">
+    <div class="col"><li class="d-flex justify-content-between align-items-center flex-wrap">
+      <h4 style="width: 100%; text-align: center;">Улучшить первый дом</h4>
+      <button id="auto-update-1" class="knopka btn btn-primary">$100</button>
+    </li></div>
+    <div class="col"><li class="d-flex justify-content-between align-items-center flex-wrap">
+      <h4 style="width: 100%; text-align: center;">Улучшить второй дом</h4>
+      <button id="auto-update-2" class="knopka btn btn-primary">$1000</button>
+    </li></div>
+    <div class="col"><li class="d-flex justify-content-between align-items-center flex-wrap">
+      <h4 style="width: 100%; text-align: center;">Улучшить третий дом</h4>
+      <button id="auto-update-3" class="knopka btn btn-primary">$5000</button>
+    </li></div>
+    <div class="col"><li class="d-flex justify-content-between align-items-center flex-wrap">
+      <h4 style="width: 100%; text-align: center;">Улучшить четвертый дом</h4>
+      <button id="auto-update-4" class="knopka btn btn-primary">$10000</button>
+    </li></div>
+    <div class="col"><li class="d-flex justify-content-between align-items-center flex-wrap">
+      <h4 style="width: 100%; text-align: center;">Улучшить пятый дом</h4>
+      <button id="auto-update-5" class="knopka btn btn-primary">$50000</button>
+    </li></div>
+  </div>
+</div>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
