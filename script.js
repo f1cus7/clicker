@@ -1,6 +1,29 @@
 const clickBtn = document.getElementById('click-btn');
 const scoreNode = document.getElementById('score');
 
+// теги для раскрытия 
+const openUpdClickBtn = document.getElementById('open-upd-click')
+const openUpdAutoClickBtn = document.getElementById('open-upd-auto-click')
+const placeUpdClick = document.getElementById('place-upd-click')
+const placeAutoUpdClick = document.getElementById('place-auto-upd-click')
+
+openUpdClickBtn.addEventListener('click', () => {
+  placeUpdClick.classList.toggle('hidden');
+  placeAutoUpdClick.classList.toggle('hidden');
+  openUpdClickBtn.classList.toggle('back-upd-btn')
+  openUpdAutoClickBtn.classList.remove('back-upd-btn')
+})
+openUpdAutoClickBtn.addEventListener('click', () => {
+  placeUpdClick.classList.toggle('hidden');
+  placeAutoUpdClick.classList.toggle('hidden');
+  openUpdAutoClickBtn.classList.toggle('back-upd-btn')
+  openUpdClickBtn.classList.remove('back-upd-btn')
+})
+
+
+
+
+
 // Массивы для апгрейдов
 const upgrades = {
   click: [
