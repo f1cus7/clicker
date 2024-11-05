@@ -34,16 +34,16 @@ const upgrades = {
     { btn: 'update-5', cost: 5000, bonus: 10, increment: 10, scale: 'prirost1', skyscaperNode: 'skyscaper-5' }
   ],
   auto: [
-    { btn: 'auto-update-1', cost: 100, bonus: 0.5, increment: 1, scale: 'auto-prirost1' },
-    { btn: 'auto-update-2', cost: 1000, bonus: 2, increment: 3, scale: 'auto-prirost1' },
-    { btn: 'auto-update-3', cost: 5000, bonus: 4, increment: 5, scale: 'auto-prirost1' },
-    { btn: 'auto-update-4', cost: 10000, bonus: 6, increment: 7, scale: 'auto-prirost1' },
-    { btn: 'auto-update-5', cost: 50000, bonus: 10, increment: 10, scale: 'auto-prirost1' }
+    { btn: 'auto-update-1', cost: 100, bonus: 0.5, increment: 1, scale: 'auto-prirost1', skyscaperNode: 'skyscaper-1' },
+    { btn: 'auto-update-2', cost: 1000, bonus: 2, increment: 3, scale: 'auto-prirost1', skyscaperNode: 'skyscaper-2' },
+    { btn: 'auto-update-3', cost: 5000, bonus: 4, increment: 5, scale: 'auto-prirost1', skyscaperNode: 'skyscaper-3' },
+    { btn: 'auto-update-4', cost: 10000, bonus: 6, increment: 7, scale: 'auto-prirost1', skyscaperNode: 'skyscaper-4' },
+    { btn: 'auto-update-5', cost: 50000, bonus: 10, increment: 10, scale: 'auto-prirost1', skyscaperNode: 'skyscaper-5' }
   ]
 };
 
 let scoreForClick = 1;
-let score = 0;
+let score = 111111110;
 let autoIncome = 0;
 
 // Обновление счета
@@ -81,6 +81,7 @@ const handleClickUpgrade = (btn, cost, increment, bonus, scale, skyscaperNode) =
 const handleAutoUpgrade = (btn, cost, increment, bonus, scale, skyscaperNode) => {
   const button = document.getElementById(btn);
   const scaleNode = document.getElementById(scale);
+  const skyscaper = document.getElementById(skyscaperNode);
   button.addEventListener('click', () => {
     if (score >= cost) {
       score -= cost;
@@ -90,6 +91,23 @@ const handleAutoUpgrade = (btn, cost, increment, bonus, scale, skyscaperNode) =>
 
       autoIncome += increment + bonus;
       scaleNode.innerText = 'Текущий прирост: ' + autoIncome.toFixed(2) + '$/сек';
+      if (skyscaper.classList.contains('skyscapers-lvl-1')){
+        skyscaper.classList.remove('skyscapers-lvl-1');
+        skyscaper.classList.add('skyscapers-lvl-2');
+      } else if (skyscaper.classList.contains('skyscapers-lvl-2')){
+        skyscaper.classList.remove('skyscapers-lvl-2');
+        skyscaper.classList.add('skyscapers-lvl-3');
+      } else if (skyscaper.classList.contains('skyscapers-lvl-3')){
+        skyscaper.classList.remove('skyscapers-lvl-3');
+        skyscaper.classList.add('skyscapers-lvl-4');
+      } else if (skyscaper.classList.contains('skyscapers-lvl-4')){
+        skyscaper.classList.remove('skyscapers-lvl-4');
+        skyscaper.classList.add('skyscapers-lvl-5');
+      } else if (skyscaper.classList.contains('skyscapers-lvl-5')){
+        skyscaper.classList.remove('skyscapers-lvl-5');
+        skyscaper.classList.add('skyscapers-lvl-6');
+      }
+
     }
   });
 };

@@ -4,7 +4,8 @@
 }
 
 body {
-  background-color: #f8f9fa;
+  background-image: url(images/background-site.png);
+  background-size: cover;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
@@ -63,7 +64,9 @@ body {
 .skyscapers-lvl-5 {
   background-color: lime;
 }
-
+.skyscapers-lvl-6 {
+  background-color: gold;
+}
 
 .skyscapers-row {
   margin-top: 3%;
