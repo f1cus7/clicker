@@ -78,7 +78,7 @@ const handleClickUpgrade = (btn, cost, increment, bonus, scale, skyscaperNode) =
 };
 
 // автоапгрейд
-const handleAutoUpgrade = (btn, cost, increment, bonus, scale) => {
+const handleAutoUpgrade = (btn, cost, increment, bonus, scale, skyscaperNode) => {
   const button = document.getElementById(btn);
   const scaleNode = document.getElementById(scale);
   button.addEventListener('click', () => {
