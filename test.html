@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="test.css">
+    <script src="scripts/test.js" defer></script>
+    <script src="scripts/click-audio.js" defer></script>
+</head>
+<body >
+    <div class="container">
+        <div class="navigation">
+            <div class="navigation-btn-container">
+                <button class="navigation-btn navigation-btn-active" id="btn-page-main">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10%" height="auto" fill="white" class="bi bi-building-fill-check" viewBox="0 0 16 16" id="svg-1">
+                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514"/>
+                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7.256A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-3.59 1.787A.5.5 0 0 0 9 9.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .39-.187A4.5 4.5 0 0 0 8.027 12H6.5a.5.5 0 0 0-.5.5V16H3a1 1 0 0 1-1-1zm2 1.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m3 0v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                      </svg>
+                    Заработок</button>
+                <button class="navigation-btn" id="btn-page-business">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10%" height="auto" fill="white" class="bi bi-currency-dollar" viewBox="0 0 16 16" id="svg-2">
+                        <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
+                      </svg>
+                    Бизнес</button>
+                <button class="navigation-btn" id="btn-page-items">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10%" height="auto" fill="white" class="bi bi-box-seam" viewBox="0 0 16 16" id="svg-3">
+                        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                      </svg>
+                    Предметы</button>
+                <button class="navigation-btn" id="btn-page-visual">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10%" height="auto" fill="white" class="bi bi-box-seam" viewBox="0 0 16 16" id="svg-4">
+                        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                      </svg>
+                    Визуал</button>
+            </div>
+        </div>
+        <!-- главная страница заработка -->
+        <div class="page-main d-none">
+                <div class="main-zarabotok-section">
+                    <div class="main-zarabotok-card">
+                        <div class="main-zarabotok-bg-container">
+                        <div class="main-zarabotok-mc">
+                            <div style="display: flex; align-items: center; gap: 1vh;">
+                                <img src="images/mcard.png" alt="" class="img-card" style="height: 2.5vh;">
+                                <p id="text-num" style="display: flex; justify-content: space-between; width: 100%; margin: 0;">
+                                  **** 1984 <span>07/32</span>
+                                </p>
+                            </div>                              
+                                <div class="balance-text">Баланс:</div>
+                                <div class="balance">$ 0.00</div>
+                        </div>
+                        <div class="main-zarabotok-update-container">
+                            <div class="main-zarabotok-update">
+                                <p>$<span id="bonusForClick"> 1.00</span>
+                                    за клик 
+                                    <button class="btn-buy-upd-click" onclick="UpdateClick()"> $ <span id="costOfUpdate">50</span>
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="main-zarabotok-click">
+                            <div class="gradient-border">
+                                <section class="inner-section">
+                                    <img src="images/finger.png" alt="Tap" id="tap-image">
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+        <div class="page-business">
+            <div class="page-business-container">
+                <div class="page-business-text">Бизнесы</div>
+            </div>
+            <div class="page-business-container">
+                <div class="page-business-container-cards">
+                    <div class="page-business-card">
+                        <div class="page-business-card-padding">
+                            <div style="display: flex; gap: 1vw; width: 15vw;">
+                                <img src="test/shaurma.svg" alt="" class="page-business-image">
+                                <p class="page-business-card-title">Шаурмечная</p>
+                            </div>
+                            <p class="page-business-card-level-text">Уровень: 
+                                <span id="business-lvl-shaurma">0</span>
+                            </p>
+                            <button class="page-business-card-btn">Купить</button>
+                        </div>
+                    </div>
+                    <div class="page-business-card">
+                        <div class="page-business-card-padding">
+                            <div style="display: flex; gap: 1vw; width: 15vw;">
+                                <img src="test/shop.svg" alt="" class="page-business-image">
+                                <p class="page-business-card-title">Магазин 24/7</p>
+                            </div>
+                            <p class="page-business-card-level-text">Уровень: 
+                                <span id="business-lvl-shop">0</span>
+                            </p>
+                            <button class="page-business-card-btn">Купить</button>
+                        </div>
+                    </div>
+                    <div class="page-business-card">
+                        <div class="page-business-card-padding">
+                            <div style="display: flex; gap: 1vw; width: 15vw;">
+                                <img src="test/computer.svg" alt="" class="page-business-image">
+                                <p class="page-business-card-title">Огранизация</p>
+                            </div>
+                            <p class="page-business-card-level-text">Уровень: 
+                                <span id="business-lvl-computer">0</span>
+                            </p>
+                            <button class="page-business-card-btn">Купить</button>
+                        </div>
+                    </div>
+                    <div class="page-business-card">
+                        <div class="page-business-card-padding">
+                            <div style="display: flex; gap: 1vw; width: 15vw;">
+                                <img src="test/airplane.svg" alt="" class="page-business-image">
+                                <p class="page-business-card-title">Аэропорт</p>
+                            </div>
+                            <p class="page-business-card-level-text">Уровень: 
+                                <span id="business-lvl-airplane">0</span>
+                            </p>
+                            <button class="page-business-card-btn">Купить</button>
+                        </div>
+                    </div>
+                    <div class="page-business-card">
+                        <div class="page-business-card-padding">
+                            <div style="display: flex; gap: 1vw; width: 15vw;">
+                                <img src="test/earth.svg" alt="" class="page-business-image">
+                                <p class="page-business-card-title">Страна</p>
+                            </div>
+                            <p class="page-business-card-level-text">Уровень: 
+                                <span id="business-lvl-earth">0</span>
+                            </p>
+                            <button class="page-business-card-btn">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
