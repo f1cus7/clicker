@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="index.css">
     <script src="scripts/test.js" defer></script>
     <script src="scripts/click-audio.js" defer></script>
 </head>
@@ -28,11 +28,19 @@
                         <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
                       </svg>
                     Предметы</button>
-                <button class="navigation-btn" id="btn-page-visual">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10%" height="auto" fill="white" class="bi bi-box-seam" viewBox="0 0 16 16" id="svg-4">
-                        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                <button class="navigation-btn" id="btn-page-cards">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10%" height="16" fill="white" class="bi bi-credit-card" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
                       </svg>
-                    Визуал</button>
+                    Карты</button>
+                <button class="navigation-btn" id="btn-page-stat">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10%" height="16" fill="white" class="bi bi-clipboard2-data" viewBox="0 0 16 16">
+                        <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z"/>
+                        <path d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z"/>
+                        <path d="M10 7a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1"/>
+                      </svg>
+                    Статистика</button>
             </div>
         </div>
         <!-- главная страница заработка -->
@@ -59,6 +67,8 @@
                                 </p>
                             </div>
                         </div>
+                        <div class="btn-div-flex">
+                        <button class="btn-ad-money">Получить <span>10</span>$ за просмотр рекламы</button></div>
                     </div>
                         <div class="main-zarabotok-click">
                             <div class="gradient-border">
@@ -70,8 +80,9 @@
                     </div>
                 </div>
         </div>
-        
-        <div class="page-business">
+ 
+        <!-- страница бизнес -->
+        <div class="page-business d-none">
             <div class="page-business-container">
                 <div class="page-business-text">Бизнесы</div>
             </div>
@@ -140,6 +151,101 @@
                 </div>
             </div>
         </div>
+
+        <!-- страница предметы -->
+        <div class="page-items d-none">
+            <div class="page-items-container">
+                <div class="page-items-choice">
+                    <div class="page-items-choice-container">
+                        <div class="page-items-btn-container">
+                            <button class="page-items-btn first-btn page-items-btn-checked">Машины</button>
+                            <button class="page-items-btn">Самолеты</button>
+                            <button class="page-items-btn">Дома</button>
+                            <button class="page-items-btn last-btn">Картинки</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-items-answer">
+                    <div class="page-items-answer-container">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- страница карты -->
+        <div class="page-cards d-none">
+            <div class="page-cards-container">
+                <div class="page-cards-main">
+                    <div class="page-cards-main-padding">
+                        <button class="btn-buy-card" id="card1">
+                            Получить стиль за просмотр рекламы
+                        </button>
+                        <button class="btn-buy-card btn-buy-card-locked" id="card2">
+                            Cначала получите предыдущую карту
+                        </button>
+                        <button class="btn-buy-card btn-buy-card-locked" id="card3">
+                            Cначала получите предыдущую карту
+                        </button>
+                        <button class="btn-buy-card btn-buy-card-locked" id="card4">
+                            Cначала получите предыдущую карту
+                        </button>
+                        <button class="btn-buy-card btn-buy-card-locked" id="card5">
+                            Cначала получите предыдущую карту
+                        </button>
+                        <button class="btn-buy-card btn-buy-card-locked" id="card6">
+                            Cначала получите предыдущую карту
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- страница статистики -->
+         <div class="page-stat">
+            <div class="page-stat-container">
+                <div class="page-stat-main">
+                    <div class="page-stat-statistic-container">
+                        <div class="page-stat-statistic-title">Статистика</div>
+                        
+                        <div class="page-stat-statistic-text">Купленно предметов: <span>0</span>/60</div>
+                        <hr class="page-stat-statistic-hr">
+                        <div class="page-stat-statistic-text">Улучшенно бизнесов: <span>0</span>/50</div>
+                        <hr class="page-stat-statistic-hr">
+                        <div class="page-stat-statistic-text">Проведено в игре: <span>0</span> час <span>0</span> мин</div>
+                        <hr class="page-stat-statistic-hr">
+                        <div class="page-stat-statistic-text">Получено карт: <span>0</span>/6</div>
+                        <hr class="page-stat-statistic-hr">
+                    </div>
+                    <div class="page-stat-use-items-container">
+                        <div class="page-stat-use-items-container-item">
+                            <div class="page-stat-use-items-img-container">
+                            <img src="test/person-car.svg" alt="" class="person-svg">
+                        </div>
+                            <div class="page-stat-use-items-description">Здесь появится ваша выбранная машина</div>
+                        </div>
+                        <div class="page-stat-use-items-container-item">
+                            <div class="page-stat-use-items-img-container">
+                            <img src="test/person-airplane.svg" alt="" class="person-svg">
+                        </div>
+                            <div class="page-stat-use-items-description">Здесь появится ваш выбранный самолет</div>
+                        </div>
+                        <div class="page-stat-use-items-container-item">
+                            <div class="page-stat-use-items-img-container">
+                            <img src="test/person-house.svg" alt="" class="person-svg">
+                        </div>
+                            <div class="page-stat-use-items-description">Здесь появится ваш выбранный дом</div>
+                        </div>
+                        <div class="page-stat-use-items-container-item">
+                            <div class="page-stat-use-items-img-container">
+                            <img src="test/person-picture.svg" alt="" class="person-svg">
+                            </div>
+                            <div class="page-stat-use-items-description">Здесь появится ваша выбранная картина</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
     </div>
 </body>
 </html>

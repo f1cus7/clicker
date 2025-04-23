@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  /* user-select: none; */
+  user-select: none;
   -webkit-user-drag: none; /* Для Safari */
   font-family: "Inter", sans-serif;
   color: var(--dark);
@@ -98,9 +98,13 @@ body {
   justify-content: center;
 }
 
-.main-zarabotok-bg-container{
-  background: linear-gradient(135deg,rgb(44, 44, 44) 0%, rgba(18, 18, 18, 1) 100%);
-  padding: 5vh 0vh;
+.main-zarabotok-bg-container {
+  background: linear-gradient(
+    135deg,
+    rgb(44, 44, 44) 0%,
+    rgba(18, 18, 18, 1) 100%
+  );
+  padding: 4vh 0vh;
   width: 50vw;
   margin-left: auto;
   margin-right: auto;
@@ -125,12 +129,13 @@ body {
 .main-zarabotok-mc {
   width: 60%;
   height: 20vh;
-  background-color: #2dc210;
+  background-image: url(test/card5.jpg);
+  background-size: cover;
   border-radius: 2vh;
   padding: 2vh;
   margin-left: auto;
   margin-right: auto;
-  color: gray;
+  color: rgb(222, 222, 222);
   font-weight: bold;
   border: 1px solid rgb(37, 37, 37);
   box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.5);
@@ -142,7 +147,7 @@ body {
 }
 
 .balance-text {
-  color: gray;
+  color: rgb(222, 222, 222);
   font-weight: bold;
   font-size: 2vh;
   margin-top: 6vh;
@@ -161,7 +166,7 @@ body {
 
 .main-zarabotok-update {
   background-color: #2c2c2c;
-  margin-top: 4vh;
+  margin-top: 3vh;
   width: 60%;
   padding: 0 2vh;
   border-radius: 1vh;
@@ -182,7 +187,7 @@ body {
 }
 
 .main-zarabotok-update p {
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 
 .main-zarabotok-click {
@@ -199,7 +204,17 @@ body {
   position: relative;
   border-radius: 1vw;
   padding: 3px; /* толщина «границы» */
-  background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet, red);
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  );
   background-size: 400% 400%;
   animation: glowBorder 5s linear infinite;
 }
@@ -207,8 +222,8 @@ body {
 /* Внутренний блок — он же «содержимое» секции */
 .inner-section {
   background-color: #1f1f1f; /* наш фон */
-  border-radius: inherit;     /* то же скругление, что и у родителя */
-  overflow: hidden;           /* если внутри ещё что‑то будет */
+  border-radius: inherit; /* то же скругление, что и у родителя */
+  overflow: hidden; /* если внутри ещё что‑то будет */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -229,9 +244,15 @@ body {
 
 /* Анимация градиента */
 @keyframes glowBorder {
-  0%   { background-position:   0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position:   0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .section-content {
@@ -249,7 +270,6 @@ body {
   transform: scale(0.8);
   transition: 0.3s;
 }
-
 
 .page-business-container {
   display: flex;
@@ -269,7 +289,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items:end;
+  align-items: end;
   height: 80vh;
 }
 
@@ -296,7 +316,7 @@ body {
 .page-business-card-title {
   font-weight: lighter;
   font-size: 3vh;
-  letter-spacing: .2vh;
+  letter-spacing: 0.2vh;
 }
 
 .page-business-card-level-text {
@@ -312,7 +332,7 @@ body {
   cursor: pointer;
   font-size: 2.5vh;
   font-weight: bold;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .page-business-card-btn:hover {
@@ -321,4 +341,206 @@ body {
 
 .page-business-card-btn:active {
   background-color: #139932;
+}
+
+.page-items-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.page-items-answer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.page-items-choice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.page-items-btn-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-items-btn {
+  width: 16vw;
+  background-color: var(--dark);
+  color: white;
+  font-size: 3vh;
+  border: none;
+  height: 12vh;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.first-btn {
+  border-radius: 2vh 2vh 0 0;
+}
+
+.last-btn {
+  border-radius: 0 0 2vh 2vh;
+}
+
+.page-items-btn:hover {
+  background-color: #2c2c2c;
+}
+
+.page-items-btn:active {
+  background-color: #333333;
+}
+
+.page-items-btn-checked {
+  background-color: #2c2c2c
+}
+
+.page-items-answer-container {
+  background-color: var(--dark);
+  height: 90vh;
+  width: 50vw;
+  border-radius: 3vh;
+}
+
+.page-cards-container, .page-stat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.page-cards-main, .page-stat-main {
+  background-color: var(--dark);
+  color: white;
+  width: 70vw;
+  height: 90vh;
+  border-radius: 3vh;
+}
+
+.page-cards-main-padding {
+  padding: 5vh;
+}
+
+.btn-buy-card {
+  background-size: cover;
+  height: 20vh;
+  width: 22vw;
+  border: none;
+  border-radius: 2vh;
+  color: white;
+  cursor: pointer;
+  font-size: 2.5vh;
+  text-shadow: 0 0.5vh 0.4vh rgba(0, 0, 0, 1);
+  margin: 3vh 5vw;
+  transition: .3s;
+}
+
+.btn-buy-card:hover {
+  transform: scale(1.05);
+}
+
+.btn-buy-card-locked {
+  opacity: 0.7;
+}
+
+#card1 {
+  background-image: url(test/card1.jpg);
+}
+
+#card2 {
+  background-image: url(test/card2.jpg);
+}
+
+#card3 {
+  background-image: url(test/card3.jpg);
+}
+
+#card4 {
+  background-image: url(test/card4.jpg);
+}
+
+#card5 {
+  background-image: url(test/card5.jpg);
+}
+
+#card6 {
+  background-image: url(test/card6.jpg);
+}
+
+.btn-ad-money {
+  background-color: #28a745;
+  border: none;
+  padding: 1vh .5vw;
+  color: white;
+  border-radius: .5vh;
+  cursor: pointer;
+  font-size: 2.5vh;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 2vh;
+}
+
+.btn-ad-money:hover {
+  background-color: #1d7c33;
+}
+
+.btn-ad-money:active {
+  background-color: #139932;
+}
+
+.btn-div-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.page-stat-main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90vh;
+}
+
+.page-stat-statistic-container {
+height: 70vh;
+width: 30vw;
+}
+
+.page-stat-use-items-container {
+  height: 70vh;
+  width: 30vw;
+}
+
+.page-stat-statistic-title {
+  font-size: 5vh;
+}
+
+.page-stat-statistic-text {
+  font-size: 3vh;
+  margin-top: 5vh;
+}
+
+.page-stat-statistic-hr {
+  width: 70%;
+  margin-left: 0;
+}
+
+.page-stat-use-items-container-item {
+  display: flex;
+  font-size: 2.5vh;
+  align-items: center;
+  margin: 4vh 0;
+}
+
+.person-svg {
+  width: 10vw;
+  height: 12vh;
+}
+
+.page-stat-use-items-description {
+  margin-left: 2vw;
+  display: block;
+  margin-right: 2vw;
 }
