@@ -296,7 +296,7 @@ body {
 .page-business-card {
   background-color: var(--dark);
   color: white;
-  width: 50vw;
+  width: 60vw;
   height: 12vh;
   border-radius: 1vh;
 }
@@ -543,4 +543,10 @@ width: 30vw;
   margin-left: 2vw;
   display: block;
   margin-right: 2vw;
+}
+
+.putCost {
+  font-size: 1vw;
+  text-align: center;
+  width: 10vw;
 }

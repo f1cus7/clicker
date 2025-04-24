@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
     <link rel="stylesheet" href="index.css">
-    <script src="scripts/test.js" defer></script>
+    <script src="scripts/pages.js" defer></script>
     <script src="scripts/click-audio.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 <body >
     <div class="container">
@@ -56,19 +57,24 @@
                                 </p>
                             </div>                              
                                 <div class="balance-text">Баланс:</div>
-                                <div class="balance">$ 0.00</div>
+                                <div class="balance">$ <span id="balance">0.00</span></div>
                         </div>
                         <div class="main-zarabotok-update-container">
                             <div class="main-zarabotok-update">
                                 <p>$<span id="bonusForClick"> 1.00</span>
                                     за клик 
-                                    <button class="btn-buy-upd-click" onclick="UpdateClick()"> $ <span id="costOfUpdate">50</span>
+                                    <button class="btn-buy-upd-click"> $ <span id="costOfUpdate">50</span>
                                     </button>
                                 </p>
                             </div>
                         </div>
                         <div class="btn-div-flex">
-                        <button class="btn-ad-money">Получить <span>10</span>$ за просмотр рекламы</button></div>
+                        <button class="btn-ad-money">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-badge-ad" viewBox="0 0 16 16">
+                                <path d="m3.7 11 .47-1.542h2.004L6.644 11h1.261L5.901 5.001H4.513L2.5 11zm1.503-4.852.734 2.426H4.416l.734-2.426zm4.759.128c-1.059 0-1.753.765-1.753 2.043v.695c0 1.279.685 2.043 1.74 2.043.677 0 1.222-.33 1.367-.804h.057V11h1.138V4.685h-1.16v2.36h-.053c-.18-.475-.68-.77-1.336-.77zm.387.923c.58 0 1.002.44 1.002 1.138v.602c0 .76-.396 1.2-.984 1.2-.598 0-.972-.449-.972-1.248v-.453c0-.795.37-1.24.954-1.24z"/>
+                                <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+                              </svg>
+                            Бонус к клику x2 — x4 на 30 секунд</button></div>
                     </div>
                         <div class="main-zarabotok-click">
                             <div class="gradient-border">
@@ -82,7 +88,7 @@
         </div>
  
         <!-- страница бизнес -->
-        <div class="page-business d-none">
+        <div class="page-business">
             <div class="page-business-container">
                 <div class="page-business-text">Бизнесы</div>
             </div>
@@ -97,7 +103,8 @@
                             <p class="page-business-card-level-text">Уровень: 
                                 <span id="business-lvl-shaurma">0</span>
                             </p>
-                            <button class="page-business-card-btn">Купить</button>
+                            <button class="page-business-card-btn" id="btnBuyShaurma">Купить</button>
+                            <div id="putCostShaurma" class="putCost"></div>
                         </div>
                     </div>
                     <div class="page-business-card">
@@ -109,7 +116,8 @@
                             <p class="page-business-card-level-text">Уровень: 
                                 <span id="business-lvl-shop">0</span>
                             </p>
-                            <button class="page-business-card-btn">Купить</button>
+                            <button class="page-business-card-btn" id="btnBuyShop">Купить</button>
+                            <div id="putCostShop" class="putCost"></div>
                         </div>
                     </div>
                     <div class="page-business-card">
@@ -121,7 +129,8 @@
                             <p class="page-business-card-level-text">Уровень: 
                                 <span id="business-lvl-computer">0</span>
                             </p>
-                            <button class="page-business-card-btn">Купить</button>
+                            <button class="page-business-card-btn" id="btnBuyComputer">Купить</button>
+                            <div id="putCostComputer" class="putCost"></div>
                         </div>
                     </div>
                     <div class="page-business-card">
@@ -133,7 +142,8 @@
                             <p class="page-business-card-level-text">Уровень: 
                                 <span id="business-lvl-airplane">0</span>
                             </p>
-                            <button class="page-business-card-btn">Купить</button>
+                            <button class="page-business-card-btn" id="btnBuyAirplane">Купить</button>
+                            <div id="putCostAirplane" class="putCost"></div>
                         </div>
                     </div>
                     <div class="page-business-card">
@@ -145,7 +155,8 @@
                             <p class="page-business-card-level-text">Уровень: 
                                 <span id="business-lvl-earth">0</span>
                             </p>
-                            <button class="page-business-card-btn">Купить</button>
+                            <button class="page-business-card-btn" id="btnBuyEarth">Купить</button>
+                            <div id="putCostEarth" class="putCost"></div>
                         </div>
                     </div>
                 </div>
@@ -202,7 +213,7 @@
         </div>
 
         <!-- страница статистики -->
-         <div class="page-stat">
+         <div class="page-stat d-none">
             <div class="page-stat-container">
                 <div class="page-stat-main">
                     <div class="page-stat-statistic-container">

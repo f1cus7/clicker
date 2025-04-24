@@ -6,6 +6,6 @@
 const mainZarabotokClick = document.querySelector('.main-zarabotok-click');
 
 mainZarabotokClick.addEventListener('click', () => {
-    const clickSound = new Audio('audio/click.mp3');
+    const clickSound = new Audio('/audio/click.mp3');
     clickSound.play();
 });
