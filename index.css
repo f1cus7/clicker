@@ -5,7 +5,15 @@ body {
   -webkit-user-drag: none; /* Для Safari */
   font-family: "Inter", sans-serif;
   color: var(--dark);
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
   font-size: 2vh;
+  overflow: hidden;
 }
 
 :root {
@@ -58,7 +66,7 @@ body {
   justify-content: flex-start;
   gap: 1vw;
   padding: 0 1vw;
-  font-size: 3vh;
+  font-size: 2.5vh;
   cursor: pointer;
   border-radius: 1.5vh;
   transition: 0.3s;
@@ -129,7 +137,7 @@ body {
 .main-zarabotok-mc {
   width: 60%;
   height: 20vh;
-  background-image: url(test/card5.jpg);
+  background-image: url(images/card0.jpg);
   background-size: cover;
   border-radius: 2vh;
   padding: 2vh;
@@ -447,27 +455,27 @@ body {
 }
 
 #card1 {
-  background-image: url(test/card1.jpg);
+  background-image: url(images/card1.jpg);
 }
 
 #card2 {
-  background-image: url(test/card2.jpg);
+  background-image: url(images/card2.jpg);
 }
 
 #card3 {
-  background-image: url(test/card3.jpg);
+  background-image: url(images/card3.jpg);
 }
 
 #card4 {
-  background-image: url(test/card4.jpg);
+  background-image: url(images/card4.jpg);
 }
 
 #card5 {
-  background-image: url(test/card5.jpg);
+  background-image: url(images/card5.jpg);
 }
 
 #card6 {
-  background-image: url(test/card6.jpg);
+  background-image: url(images/card6.jpg);
 }
 
 .btn-ad-money {
@@ -535,18 +543,209 @@ width: 30vw;
 }
 
 .person-svg {
-  width: 10vw;
-  height: 12vh;
+  width: 12vw;
+  height: 14vh;
 }
 
 .page-stat-use-items-description {
   margin-left: 2vw;
   display: block;
   margin-right: 2vw;
+  font-size: 3vh;
 }
 
 .putCost {
   font-size: 1vw;
   text-align: center;
   width: 10vw;
+}
+
+.car-container {
+  display: flex;
+  color: white;
+  padding: 3vh 2vw;
+  justify-content: space-evenly;
+  height: 15vh;
+  align-items: center;
+}
+
+.car-image-container {
+width: 16vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.car-image {
+  height: 12vh;
+  max-width: 16vw;
+}
+
+.plane-image {
+  height: 15vh;
+  width: 13vw;
+  border-radius: 1.5vh;
+}
+
+.car-title {
+  font-size: 3vh;
+  font-weight: bold;
+  width: 10vw;
+  text-align: center;
+}
+
+.item-btn {
+  width: 14vw;
+  font-size: 3vh;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 1vh;
+  cursor: pointer;
+  font-size: 3vh;
+  font-weight: bold;
+  transition: 0.3s;
+  height: 10vh;
+}
+
+.item-btn:hover {
+  background-color: #1d7c33;
+}
+
+.item-btn:active {
+  background-color: #139932;
+}
+
+.page-items-hr-container {
+  display: flex;
+  justify-content: center;
+}
+
+.item-hr {
+  width: 80%;
+  border: .1vh solid white;
+}
+
+.item-country {
+  font-size: 2vh;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.country-text {
+  font-weight: normal;
+  font-size: 2vh;
+}
+
+
+.cars, .planes, .houses, .pictures {
+  height: 90vh;
+  overflow-y: scroll;
+  width: 49.2vw;
+}
+
+.cars::-webkit-scrollbar, .planes::-webkit-scrollbar,
+.houses::-webkit-scrollbar, .pictures::-webkit-scrollbar {
+  width: .5vw;
+}
+
+.cars::-webkit-scrollbar-track, .planes::-webkit-scrollbar-track,
+.houses::-webkit-scrollbar-track, .pictures::-webkit-scrollbar-track {
+  background: #1f1f1f00; /* фон трека */
+}
+
+.cars::-webkit-scrollbar-thumb, .planes::-webkit-scrollbar-thumb,
+.houses::-webkit-scrollbar-thumb, .pictures::-webkit-scrollbar-thumb {
+  background-color: #fff; /* цвет "ползунка" */
+  border-radius: .5vh; /* скругление */
+}
+
+.cars::-webkit-scrollbar-thumb:hover, .planes::-webkit-scrollbar-thumb:hover,
+.houses::-webkit-scrollbar-thumb:hover, .pictures::-webkit-scrollbar-thumb:hover {
+  background: #555; /* цвет при наведении */
+}
+
+.item-btn-buyed {
+  width: 14vw;
+  font-size: 120%;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 1vh;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  height: 10vh;
+}
+
+.item-btn-buyed:hover {
+  background-color: #006adb;
+}
+
+.item-btn-buyed:active {
+  background-color: #2a91ff;
+}
+
+.carCountry {
+  font-style: italic;
+}
+
+.person-plane-img {
+  border-radius: 1.5vh;
+  width: 12vw;
+  height: 14vh;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 3rem;
+  z-index: 9999;
+}
+
+.countdown {
+  font-weight: bold;
+  font-size: 10vh;
+}
+
+.loading-text {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  font-size: 5vh;
+}
+
+/* Анимация: цифра влетает снизу, достигает центра и затем исчезает вверх */
+@keyframes flyFade {
+  0% {
+    opacity: 0;
+    transform: translateY(1vh);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1vh);
+  }
+}
+
+.animate {
+  animation: flyFade 1s ease forwards;
+}
+
+#logo {
+  width: 15vh;
+  height: 15vh;
+  margin-top: 5vh;
+  border-radius: 2vh;
 }
